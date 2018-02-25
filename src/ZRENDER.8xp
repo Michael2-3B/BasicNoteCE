@@ -7,7 +7,9 @@ Text(0,88,"BasicNote CE
 TextColor(Black
 Horizontal ~150,Black,1
 Text(0,254,"A
-15->B:2->C
+15->B
+2->C
+1->Z //What row to start displaying at; will be used when scrolling is implemented.
 For(I,Z,dim(|LCNOTE
 	If I>1
 	2+int(|LCNOTE(I-1->C
