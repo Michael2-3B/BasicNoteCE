@@ -10,7 +10,7 @@ Text(0,254,"A
 15->B
 2->C
 1->Z //What row to start displaying at; will be used when scrolling is implemented.
-For(I,Z,dim(|LCNOTE
+For(I,Z,dim(|LCNOTE)+(Z-2
 	If I>1
 	2+int(|LCNOTE(I-1->C
 	If C<=length(Str7) and fPart(|LCNOTE(I:Then
