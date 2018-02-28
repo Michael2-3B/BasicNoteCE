@@ -15,10 +15,11 @@ Text(0,254,"A
 1->Z //What row to start displaying at; will be used when scrolling is implemented.
 
 //Calculate what row to stop rendering at
-If dim(|LCNOTE)-Z>10:Then
+dim(|LCNOTE
+If Ans-Z>10:Then
 Z+10->D
 Else
-dim(|LCNOTE->D
+Ans->D
 End
 
 //Loop through each row to display text
