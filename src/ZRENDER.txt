@@ -1,7 +1,11 @@
 //Currently a separate program, will be integrated later.
-
+"   
+For(H,1,6
+	Ans+Ans
+End
+sub(Ans,1,187
 For(H,15,135,12
-	Text(H,1,"                                                                                                                                                                                           "
+	Text(H,1,Ans
 End
 15->H
 2->C
