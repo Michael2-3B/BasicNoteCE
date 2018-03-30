@@ -1,35 +1,23 @@
 //Currently a separate program, will be integrated later.
 
-//Draw on graph screen, assuming window has already been set up
-ClrDraw
-Horizontal ~15,Black,1
-TextColor(Navy
-Text(0,88,"BasicNote CE
-TextColor(Black
-Horizontal ~150,Black,1
-Text(0,254,"A
-
-//Declare variables
-15->B
+For(H,15,135,12
+	Text(H,1,"                                                                                                                                                                                           "
+End
+15->H
 2->C
-1->Z //What row to start displaying at; will be used when scrolling is implemented.
-
-//Calculate what row to stop rendering at
 dim(|LCNOTE
 If Ans-Z>10:Then
-Z+10->D
+	Z+10->D
 Else
-Ans->D
+	Ans->D
 End
-
-//Loop through each row to display text
 For(I,Z,D
 	If I>1
 	2+int(|LCNOTE(I-1->C
 	If C<=length(Str7) and fPart(|LCNOTE(I:Then
 		If "[xbar]"=sub(Str7,C,1
 		C+1->C
-		Text(B,1,sub(Str7,C,int(|LCNOTE(I)-(C-1)(I>1
+		Text(H,1,sub(Str7,C,int(|LCNOTE(I)-(C-1)(I>1
 	End
-	B+12->B
+	H+12->H
 End
