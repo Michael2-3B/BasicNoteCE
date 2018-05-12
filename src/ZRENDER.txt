@@ -1,7 +1,7 @@
 //subprogram containing various routines/algorithms to carry out or values to calculate
 
 Ans->theta //argument passed from main program
-If 1=iPart(Ans
+If 1=iPart(Ans //rendering routine
 Then
 	"            "
 	For(I,1,4
