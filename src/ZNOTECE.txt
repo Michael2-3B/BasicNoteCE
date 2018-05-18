@@ -1,0 +1,194 @@
+// theta=1: render, top to bottom
+// theta=1.1: render, bottom to top
+// theta=2: update position of cursor in string and cursor x
+// theta=3: save note
+// theta=4: delete note
+
+Ans->theta //argument passed from other program
+If 1=iPart(Ans
+Then
+	"            "
+	For(I,1,4
+		Ans+Ans
+	End
+	sub(Ans,1,187->Str3
+	15->H:2->C:dim(|LCNOTE
+	If Ans-Z>10 //variable Z is the top row of the note being displayed
+	Then
+		Z+10->D //variable D is the index in the list to stop displaying
+	Else
+		Ans->D
+	End
+	{Z,D,1 //default list to render from top to bottom
+	If theta=1.1
+	Then
+		135->H
+		Text(H,1,Str3
+		{D,Z,~1 //list to render from bottom to top
+	End
+	For(I,Ans(1),Ans(2),Ans(3)
+		If I>1
+		1+int(|LCNOTE(I-1->C
+		If C<=length(Str7) and fPart(|LCNOTE(I
+		Then
+			If "[xbar]"=sub(Str7,C,1
+			C+1->C
+			Text(H,1,Str3
+			Text(H,1,sub(Str7,C,int(|LCNOTE(I)-(C-1)
+		End
+		If not(fPart(|LCNOTE(I
+		Text(H,1,Str3
+		H+12((theta=1)-(theta=1.1->H
+	End
+	If theta=1 and H<=135
+	Then
+		For(H,H,135,12
+			Text(H,1,Str3
+		End
+	End
+	
+	//Scroll Bar Display:
+	If dim(|LCNOTE)>11
+	Then
+		Line(264,~16,264,~149,0
+		133/dim(|LCNOTE
+		Line(264,~16-(Z-1)Ans,264,~149+(dim(|LCNOTE)-Z-10)Ans
+	End
+Else
+	If 2=theta //update position and cursor x
+	Then
+		Z-1+abs(B/6+1)/2->H //index in list of current row
+		If V>=|E3fPart(|LCNOTE(H //vertical alignment line is past the width of the row
+		Then
+			|E3fPart(|LCNOTE(H->A
+			iPart(|LCNOTE(H->P
+		Else
+			If H=1
+			Then
+				1->P
+			Else
+				iPart(|LCNOTE(H-1
+				If inString(sub(Str7,Ans,iPart(|LCNOTE(H))-Ans),"[xbar]
+				1+Ans
+				Ans->P
+			End
+			If V
+			Then
+				0->N
+				While N<V
+					N->I
+					If sub(Str7,P+1,1)!="[xbar]"
+					N+inString("123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh",sub(Str9,inString(Str8,sub(Str7,P+1,1)),1->N
+					P+1->P
+				End
+				If V-I<N-V
+				Then
+					I->N
+					P-1->P
+				End
+				N->A
+			Else
+				0->A
+			End
+		End
+	Else
+		If 3=theta //save note
+		Then
+			If Q //if the new note has never been saved before
+			Then
+				1+|LBNOTE(1->|LBNOTE(1
+				Str6+Str7+"[ybar]->Str6
+				augment(|LBNOTE,augment(|LCNOTE,{~1->|LBNOTE
+				0->Q
+				dim(|LCNOTE->O
+			Else
+				1->G
+				For(I,1,E
+					1+inString(Str6,"[ybar]",G->G
+				End
+				1->I
+				If E>1
+				Then
+					1->J
+					Repeat J=E
+						I+1->I
+						If |LBNOTE(I)=~1
+						J+1->J
+					End
+				End
+				I+1->I
+				Ans->R
+				
+				//update main list:
+				dim(|LCNOTE->J
+				If O!=Ans
+				Then
+					If O<J
+					Then
+						J-O+dim(|LBNOTE->dim(|LBNOTE
+						For(I,dim(|LBNOTE),R+J,~1
+							|LBNOTE(I-(J-O))->|LBNOTE(I
+							0->|LBNOTE(I-(J-O
+						End
+					End
+					
+					If O>J
+					Then
+						//will create smaller list
+					End
+				End
+				1->I
+				While |LBNOTE(R)!=~1
+					|LCNOTE(I->|LBNOTE(R
+					I+1->I
+					R+1->R
+				End
+				dim(|LCNOTE->O
+				//update main string:
+				sub(Str6,1,G-1)+Str7+sub(Str6,inString(Str6,"[ybar]",G),length(Str6)-(~1+inString(Str6,"[ybar]",G->Str6
+			End
+		Else
+			If 4=theta //delete note
+			Then
+				1->I
+				If E>1 //variable E represents what note is selected
+				Then
+					1->J
+					Repeat J=E
+						I+1->I
+						If |LBNOTE(I)=~1
+						J+1->J
+					End
+				End
+				I+1->I
+				seq(|LBNOTE(X),X,1,I-1->L1
+				If E<|LBNOTE(1
+				Then
+					Repeat |LBNOTE(I)=~1
+						I+1->I
+					End
+					augment(L1,seq(|LBNOTE(X),X,I+1,dim(|LBNOTE->L1
+				End
+				L1->|LBNOTE
+				DelVar L1
+	
+				If 1=|LBNOTE(1
+				Then
+					"[ybar]->Str6
+				Else
+					1->G
+					For(I,1,E
+						1+inString(Str6,"[ybar]",G->G
+					End
+					sub(Str6,1,G-1
+					If E<|LBNOTE(1
+					Ans+sub(Str6,inString(Str6,"[ybar]",G)+1,length(Str6)-inString(Str6,"[ybar]",G
+					Ans->Str6
+				End
+				|LBNOTE(1)-1->|LBNOTE(1
+			Else
+				//other routines go here.
+			End
+		End
+	End
+End
