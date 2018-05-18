@@ -12,7 +12,9 @@ Then
 		Ans+Ans
 	End
 	sub(Ans,1,187->Str3
-	15->H:2->C:dim(|LCNOTE
+	15->H //row
+	2->C //index in string
+	dim(|LCNOTE
 	If Ans-Z>10 //variable Z is the top row of the note being displayed
 	Then
 		Z+10->D //variable D is the index in the list to stop displaying
@@ -20,11 +22,11 @@ Then
 		Ans->D
 	End
 	{Z,D,1 //default list to render from top to bottom
-	If theta=1.1
+	If theta=1.1 //render from bottom to top
 	Then
 		135->H
-		Text(H,1,Str3
-		{D,Z,~1 //list to render from bottom to top
+		Text(H,1,Str3 //clear line
+		{D,Z,~1
 	End
 	For(I,Ans(1),Ans(2),Ans(3)
 		If I>1
@@ -60,8 +62,8 @@ Else
 		Z-1+abs(B/6+1)/2->H //index in list of current row
 		If V>=|E3fPart(|LCNOTE(H //vertical alignment line is past the width of the row
 		Then
-			|E3fPart(|LCNOTE(H->A
-			iPart(|LCNOTE(H->P
+			|E3fPart(|LCNOTE(H->A //store max row width in A
+			iPart(|LCNOTE(H->P //store max row position in P
 		Else
 			If H=1
 			Then
@@ -100,10 +102,10 @@ Else
 				Str6+Str7+"[ybar]->Str6
 				augment(|LBNOTE,augment(|LCNOTE,{~1->|LBNOTE
 				0->Q
-				dim(|LCNOTE->O
+				dim(|LCNOTE->O //variable O is the dimension of the list at the last save
 			Else
 				1->G
-				For(I,1,E
+				For(I,1,E //variable E is which number note is being edited
 					1+inString(Str6,"[ybar]",G->G
 				End
 				1->I
@@ -121,10 +123,11 @@ Else
 				
 				//update main list:
 				dim(|LCNOTE->J
-				If O!=Ans
+				If O!=Ans //if current dimension is not the same as dimension at last save
 				Then
-					If O<J
+					If O<J //if current dimension is larger
 					Then
+						//increase size and shift over values of main list:
 						J-O+dim(|LBNOTE->dim(|LBNOTE
 						For(I,dim(|LBNOTE),R+J,~1
 							|LBNOTE(I-(J-O))->|LBNOTE(I
@@ -132,7 +135,7 @@ Else
 						End
 					End
 					
-					If O>J
+					If O>J //if current dimension is smaller
 					Then
 						//will create smaller list
 					End
@@ -143,7 +146,7 @@ Else
 					I+1->I
 					R+1->R
 				End
-				dim(|LCNOTE->O
+				dim(|LCNOTE->O //update dimension for the save
 				//update main string:
 				sub(Str6,1,G-1)+Str7+sub(Str6,inString(Str6,"[ybar]",G),length(Str6)-(~1+inString(Str6,"[ybar]",G->Str6
 			End
@@ -187,7 +190,7 @@ Else
 				End
 				|LBNOTE(1)-1->|LBNOTE(1
 			Else
-				//other routines go here.
+				//other routines
 			End
 		End
 	End
