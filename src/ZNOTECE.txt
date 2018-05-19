@@ -7,8 +7,8 @@
 Ans->theta //argument passed from other program
 If 1=iPart(Ans
 Then
-	"            "
-	For(I,1,4
+	"   
+	For(I,1,7
 		Ans+Ans
 	End
 	sub(Ans,1,187->Str3
@@ -22,13 +22,13 @@ Then
 		Ans->D
 	End
 	{Z,D,1 //default list to render from top to bottom
-	If theta=1.1 //render from bottom to top
+	If fPart(theta //render from bottom to top
 	Then
 		135->H
 		Text(H,1,Str3 //clear line
 		{D,Z,~1
 	End
-	For(I,Ans(1),Ans(2),Ans(3)
+	For(I,Ans(1),Ans(2),Ans(3
 		If I>1
 		1+int(|LCNOTE(I-1->C
 		If C<=length(Str7) and fPart(|LCNOTE(I
@@ -36,11 +36,11 @@ Then
 			If "[xbar]"=sub(Str7,C,1
 			C+1->C
 			Text(H,1,Str3
-			Text(H,1,sub(Str7,C,int(|LCNOTE(I)-(C-1)
+			Text(H,1,sub(Str7,C,int(|LCNOTE(I)-(C-1
 		End
 		If not(fPart(|LCNOTE(I
 		Text(H,1,Str3
-		H+12((theta=1)-(theta=1.1->H
+		H-12+24(theta=1->H
 	End
 	If theta=1 and H<=135
 	Then
@@ -79,7 +79,7 @@ Else
 				0->N
 				While N<V
 					N->I
-					If sub(Str7,P+1,1)!="[xbar]"
+					If sub(Str7,P+1,1)!="[xbar]
 					N+inString("123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh",sub(Str9,inString(Str8,sub(Str7,P+1,1)),1->N
 					P+1->P
 				End
@@ -101,8 +101,7 @@ Else
 				1+|LBNOTE(1->|LBNOTE(1
 				Str6+Str7+"[ybar]->Str6
 				augment(|LBNOTE,augment(|LCNOTE,{~1->|LBNOTE
-				0->Q
-				dim(|LCNOTE->O //variable O is the dimension of the list at the last save
+			        DelVar Qdim(|LCNOTE->O //variable O is the dimension of the list at the last save
 			Else
 				1->G
 				For(I,1,E //variable E is which number note is being edited
@@ -130,7 +129,7 @@ Else
 						//increase size and shift over values of main list:
 						J-O+dim(|LBNOTE->dim(|LBNOTE
 						For(I,dim(|LBNOTE),R+J,~1
-							|LBNOTE(I-(J-O))->|LBNOTE(I
+							|LBNOTE(I-(J-O->|LBNOTE(I
 							0->|LBNOTE(I-(J-O
 						End
 					End
@@ -141,7 +140,7 @@ Else
 					End
 				End
 				1->I
-				While |LBNOTE(R)!=~1
+				While ~1!=|LBNOTE(R
 					|LCNOTE(I->|LBNOTE(R
 					I+1->I
 					R+1->R
