@@ -28,6 +28,7 @@ function convertTxt(){
         }
     }
     text = " "+text;
+	return text;
 }
 
 function getText(event) {
