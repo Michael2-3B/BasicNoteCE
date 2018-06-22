@@ -3,8 +3,8 @@ document.getElementById('textInput').addEventListener('change', getText);
 function doStuffWithText(text) {
     // do your processing here
     document.querySelector('pre').innerText = text;
-	text = convertTxt();
-	document.querySelector('code').innerText = text;
+	var myString = convertTxt();
+	document.getElementById("theString").innerHTML = myString;
 }
 
 function convertTxt(){
