@@ -1,9 +1,8 @@
 document.getElementById('textInput').addEventListener('change', getText);
-var txt = document.getElementById('txtDisplay');
 		
 function doStuffWithText(text) {
     // do your processing here
-    txt.innerText = text;
+    document.querySelector('pre').innerText = text;
 }
 
 function getText(event) {
