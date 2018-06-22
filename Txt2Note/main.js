@@ -1,4 +1,3 @@
-//4
 document.getElementById('textInput').addEventListener('change', getText);
 		
 function doStuffWithText(text) {
