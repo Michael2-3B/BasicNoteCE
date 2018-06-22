@@ -3,7 +3,7 @@ var txt = document.getElementById('txtDisplay');
 		
 function doStuffWithText(text) {
     // do your processing here
-    txt.innerHTML = text;
+    txt.innerText = text;
 }
 
 function getText(event) {
