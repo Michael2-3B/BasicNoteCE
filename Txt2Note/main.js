@@ -5,7 +5,7 @@ function doStuffWithText(text) {
     // do your processing here
     document.querySelector('pre').innerText = text;
 	var myString = convertTxt();
-	document.querySelector('pre').innerText = myString;
+	document.getElementById("theString").innerText = myString;
 }
 
 function convertTxt(){
