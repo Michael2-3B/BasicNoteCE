@@ -5,7 +5,7 @@ function doStuffWithText(text) {
     // do your processing here
     document.querySelector('pre').innerText = text;
 	var myString = convertTxt();
-	document.getElementById("theString").innerText = myString;
+	document.querySelector('pre').innerText = myString;
 }
 
 function convertTxt(){
@@ -27,6 +27,8 @@ function convertTxt(){
             	}
             }
         }
+	text = text.substr(0,i)+"\"+text.substr(i+1);
+	    i++;
     }
     text = " "+text;
 	return text;
