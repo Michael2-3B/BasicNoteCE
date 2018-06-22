@@ -1,10 +1,11 @@
+//4
 document.getElementById('textInput').addEventListener('change', getText);
 		
 function doStuffWithText(text) {
     // do your processing here
-    document.querySelector('pre').innerText = text;
+    document.getElementById("theTxt").innerText = text;
 	var myString = convertTxt();
-	document.getElementById("theString").innerHTML = myString;
+	document.getElementById("theString").innerText = myString;
 }
 
 function convertTxt(){
