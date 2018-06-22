@@ -27,7 +27,7 @@ function convertTxt(){
             }
         }
 	text = text.substr(0,i)+"\\"+text.substr(i+1);
-	    i++;
+	    i--;
     }
     text = " "+text;
 	return text;
