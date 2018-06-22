@@ -1,15 +1,11 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
-<title>Text To BasicNote Converter</title>
+	<title>Text To BasicNote Converter</title>
 </head>
 <body>
-<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-<script src="main.js"></script>
-<div>
-<label for="String">txt File:</label>
-<input type="file" id="txtFile" name="txt" accept="text/plain" />
-</div>
-<iframe id="myText" style="border-style: solid;" src="" width=600 height=300 />
+	<input id="textInput" type="file" accept="text/plain">
+  <div id="txtDisplay" width=screen.width height=screen.height style="border-style:solid;"></div>
+  <script type="text/javascript" src="main.js"></script>
 </body>
 </html>
