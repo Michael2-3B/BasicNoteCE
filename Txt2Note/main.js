@@ -26,7 +26,7 @@ function convertTxt(){
             	}
             }
         }
-	text = text.substr(0,i)+"\"+text.substr(i+1);
+	text = text.substr(0,i)+"\\"+text.substr(i+1);
 	    i++;
     }
     text = " "+text;
