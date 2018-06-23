@@ -28,8 +28,8 @@ function convertTxt(){
         }
     }
     text = " "+text;
-	for(var i=1;i<str1.length;i+=2){
-    	str1  = str1.substr(0,i)+"\\"+str1.substr(i);
+	for(var i=1;i<text.length;i+=2){
+    	text  = text.substr(0,i)+"\\"+text.substr(i);
 	}
 	return text;
 }
