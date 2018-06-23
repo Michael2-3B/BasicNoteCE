@@ -26,10 +26,11 @@ function convertTxt(){
             	}
             }
         }
-	text = text.substr(0,i)+"\\"+text.substr(i+1);
-	    i--;
     }
     text = " "+text;
+	for(var i=1;i<str1.length;i+=2){
+    	str1  = str1.substr(0,i)+"\\"+str1.substr(i);
+	}
 	return text;
 }
 
