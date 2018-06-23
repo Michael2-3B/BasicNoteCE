@@ -8,14 +8,17 @@ function doStuffWithText(text) {
 }
 
 function copyString(){
-	var copyText = document.getElementById("theString");
-	copyText.select();
+	document.getElementById("theString").select();
 	document.execCommand("copy");
 }
 
 function convertTxt(){
     var dictionary = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzθ' :?1234567890^-/*+().{}[]!@#$%&=_|";
     var text = document.querySelector('pre').innerText;
+	text = " "+text;
+	for(var i=1;i<text.length;i+=2){
+    	text  = text.substr(0,i)+"\\"+text.substr(i);
+	}
     for(var i=0;i<text.length;i++){
         if (text[i]=="\n"){
 			if (i==0){
@@ -34,9 +37,6 @@ function convertTxt(){
         }
     }
     text = " "+text;
-	for(var i=1;i<text.length;i+=2){
-    	text  = text.substr(0,i)+"\\"+text.substr(i);
-	}
 	return text;
 }
 
