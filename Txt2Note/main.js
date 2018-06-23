@@ -4,7 +4,7 @@ function doStuffWithText(text) {
     // do your processing here
     document.querySelector('pre').innerText = text;
 	var myString = convertTxt();
-	document.getElementById("theString").innerText = myString;
+	document.getElementById("theString").value = myString;
 }
 
 function copyString(){
