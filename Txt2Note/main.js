@@ -13,7 +13,7 @@ function copyString(){
 }
 
 function convertTxt(){
-    var dictionary = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzθ' :?1234567890^-/*+().{}[]!@#$%&=_|";
+    var dictionary = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzθ' :?,1234567890^-/*+().{}[]!@#$%&=_|";
     var text = document.querySelector('pre').innerText;
 	text=" "+text;
 	for(var i=1;i<text.length;i+=2){
