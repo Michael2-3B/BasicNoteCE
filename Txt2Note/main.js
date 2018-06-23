@@ -7,6 +7,12 @@ function doStuffWithText(text) {
 	document.getElementById("theString").innerText = myString;
 }
 
+function copyString(){
+	var copyText = document.getElementById("theString");
+	copyText.select();
+	document.execCommand("copy");
+}
+
 function convertTxt(){
     var dictionary = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzθ' :?1234567890^-/*+().{}[]!@#$%&=_|";
     var text = document.querySelector('pre').innerText;
