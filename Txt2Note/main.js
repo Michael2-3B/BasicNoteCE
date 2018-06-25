@@ -26,7 +26,7 @@ function convertTxt(){
 			text = text.substr(0,i-1)+"[xbar]"+text.substr(i+1);
         } else {
         	if (dictionary.indexOf(text[i]) == -1){
-				text = text.substr(0,i-1)+text.substr(i+1);
+				text = text.substr(0,i)+"?"+text.substr(i+1);
             }
         }
     }
