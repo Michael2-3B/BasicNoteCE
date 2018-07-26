@@ -1,0 +1,894 @@
+"[|F][|F][|F][|F][|F]BPUW875668T888AK8888[|F]8888[|F]846888[|F][|F]888888888A98888889AA9A884[|F]248A88[|F][|F]888884896C8989878A8C98884[|F]248[|F][|F][|F][|F][|F][|F]afhCH8889QA8C6NGGG64GGG[|F][|F][|F]9N4CCAAA888AA84->Str9
+"[|F][|F][|F][|F][|F]^^-1sin(cos(tan(^^^2,()/log(789*ln(456-[|F]123+[|F]0.~ABC[|F][|F]DEFGHIJKLMNOPQRSTUVWXYZtheta'[|F] :?abc[|F][|F]defghijklmnopqrstuvwxyztheta'[|F] :?[|F][|F][|F][|F][|F][|F]sin^-1(cos^-1(tan^-1(pisqrt(|E{}[e]10^(|u|v|w[e^(L4L5L6][|F]L1L2L3[|F][|F][|F][i]Ans!@#$%&=><>=<=_|"->Str8
+Horizontal ~15,Black,1
+TextColor(Navy
+Text(0,73,"BasicNote Editor
+TextColor(Black
+Horizontal ~150,Black,1
+Text(0,254,"A
+Text(150,6,"Saved
+Text(150,64,"Pg Up
+Text(150,110,"Pg Dwn
+Text(150,225,"Exit
+For(I,52.8,211.2,52.8
+	Line(I,~164,I,~150,Black,1
+End
+1->M:~18->B:1->Z:1->S:0->T:0->F
+DelVar ADelVar JDelVar UDelVar V
+{0,0,0,0,0,0->L3
+|LBNER(3->|LBNER(4
+1->P
+Repeat K=15
+	If |LBNER(4)<=0 and |LBNER(2
+	Then
+		If not(S
+		Then
+			3:prgmZNOTECE
+			1->S
+		End
+		|LBNER(3->|LBNER(4
+	End
+	Line(A,B,A,B-9,Red,1
+	Repeat Ans
+		getKey
+	End
+	Ans->K
+	Line(A,B,A,B-9,0,Red,1
+	If pxl-Test(5,3
+	Text(0,2,"                        "
+	
+	
+	If K=11
+	Then
+		If not(S
+		Then
+			3:prgmZNOTECE
+			1->S
+		End
+		pi->K
+	End
+	If K=pi
+End
+
+If M=3 and K=95
+Then
+	Lbl MK
+	not(T->T
+	If T
+	{A,A,B,B,P,P->L3
+	If not(T
+	Then
+		{L3(3),L3(4
+		If Ans(2)>Ans(1
+		{L3(4),L3(3
+		For(I,Ans(1),Ans(2),~12
+			Line(0,I+1,262,I+1,0,Blue,1
+			Line(0,I-10,262,I-10,0,Blue,1
+		End
+	End
+	If K=91
+	Goto TK
+	If sum(K={12,13
+	Goto PG
+	If K=23
+	Goto DE
+	If K>=41 and K<=105 and K!=95
+	Goto CH
+	pi->K
+End
+If K=pi
+End
+
+If T and K=91 and not(M
+Then
+	Goto MK
+	Lbl TK
+	{L3(1),L3(2
+	If L3(4)>L3(3)
+	Then
+		augment(Ans,{L3(4),L3(3
+	Else
+		augment(Ans,{L3(3),L3(4
+	End
+	If L3(5)>L3(6
+	Then
+		augment(Ans,{L3(6),L3(5
+	Else
+		augment(Ans,{L3(5),L3(6
+	End
+	Ans->|LBMEM
+	If Ans(6)-Ans(5
+	sub(Str7,Ans(5)+1,Ans(6)-Ans(5->Str5
+	TextColor(RED
+	Text(0,2,"Cop\ied
+	TextColor(BLACK
+	pi->K
+End
+If K=pi
+End
+
+If not(T) and M=3 and K=91
+Then
+	If |LBMEM(6)-|LBMEM(5)>0
+	Then
+		|LBNER(4)-1->|LBNER(4
+		Text(0,73,"                                                            "
+		TextColor(Red
+		Text(0,88,"Processing...
+		TextColor(Black
+		If P=length(Str7
+		Then
+			Str7+Str5->Str7
+		Else
+			If P<length(Str7
+			Then
+				sub(Str7,1,P)+Str5+sub(Str7,P+1,length(Str7)-P->Str7
+			End
+		End
+		5+.1(Z-1+abs(B/6+1)/2>1:prgmZNOTECE
+		1.2:prgmZNOTECE
+		TextColor(Navy
+		Text(0,73,"BasicNote Editor
+		TextColor(Black
+		If S
+		Then
+			Text(150,6,"  Save "
+			DelVar S
+		End
+	End
+	pi->K
+End
+If K=pi
+End
+If not(T) and M=3 and K=102
+Then
+	Text(150,59,"! @ # $ % & = > < >= <= _ |       
+	58->Y
+	136->X
+	Repeat sum(K={25,45
+		inString("123456789ABC",sub(Str9,X+1,1
+		Line(Y,~152,Y,~163,Red,1
+		Line(Y,~152,Y+Ans,~152,Red,1
+		Line(Y,~163,Y+Ans,~163,Red,1
+		Line(Y+Ans,~152,Y+Ans,~163,Red,1
+		Repeat sum(Ans={24,25,26,45,105
+			getKey
+		End
+		Ans->K
+		If sum(K={24,26
+		Then
+			inString("123456789ABC",sub(Str9,X+1,1
+			Line(Y,~152,Y,~163,0,Red,1
+			Line(Y,~152,Y+Ans,~152,0,Red,1
+			Line(Y,~163,Y+Ans,~163,0,Red,1
+			Line(Y+Ans,~152,Y+Ans,~163,0,Red,1
+			If K=26
+			Then
+				If X<148
+				Then
+					Y+2+inString("123456789ABC",sub(Str9,X+1,1->Y
+					X+1->X
+				Else
+					58->Y
+					136->X
+				End
+			End
+			If K=24
+			Then
+				If X>136
+				Then
+					Y-2-inString("123456789ABC",sub(Str9,X,1->Y
+					X-1->X
+				Else
+					192->Y
+					148->X
+				End
+			End
+		End
+		If K=105
+		Then
+			|LBNER(4)-1->|LBNER(4
+			sub(Str8,X+1,1->Str2
+			inString("123456789ABC",sub(Str9,X+1,1->W
+			Goto SP
+			Lbl K1
+			If S
+			Then
+				Text(150,6,"  Save "
+				DelVar S
+			End
+			0->F
+		End
+	End
+	Text(150,58,"                                                                             "
+	Text(150,64,"Pg Up
+	Text(150,110,"Pg Dwn
+	For(I,52.8,211.2,52.8
+		Line(I,~164,I,~150,Black,1
+	End
+	pi->K
+End
+If K=pi
+End
+If sum(K={12,13
+Then
+	If T
+	Goto MK
+	Lbl PG
+	Z->H
+	If K=12
+	Then
+		If Z>11
+		Then
+			Z-11->Z
+		Else
+			1->Z
+		End
+	End
+	If K=13
+	Then
+		dim(|LCNOTE
+		If Z+10<Ans
+		Then
+			If Z+11<Ans-9
+			Then
+				Z+11->Z
+			Else
+				Ans-10->Z
+			End
+		End
+	End
+	If Z!=H
+	Then
+		1+.1(K=13
+		prgmZNOTECE
+	End
+	DelVar H
+	2:prgmZNOTECE
+	pi->K
+End
+If K=pi
+End
+If K=21 or K=31
+Then
+	If K=31 and M=3
+	0->M
+	If K=31
+	M+1-3(M=2->M
+	If K=21
+	3(M!=3->M
+	Text(0,254,sub(" Aa2",M+1,1
+	If not(M
+	Text(0,254,"    
+	pi->K
+End
+If K=pi
+End
+If max(K={24,25,26,34
+Then
+	If T
+	Then
+		Line(0,B+1,262,B+1,0,Blue,1
+		Line(0,B-10,262,B-10,0,Blue,1
+	End
+	If K=24
+	Then
+		If not(A
+		Then
+			If B=~18
+			Then
+				If Z>1
+				Then
+					Z-1->Z
+					|E3fPart(|LCNOTE(Z-1+abs(B/6+1)/2->A
+					If "[xbar]"!=sub(Str7,P,1
+					A-inString("123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh",sub(Str9,inString(Str8,sub(Str7,P,1)),1->A
+					P-1->P
+					1:prgmZNOTECE
+				End
+			Else
+				B+12->B
+				|E3fPart(|LCNOTE(Z-1+abs(B/6+1)/2->A
+				If "[xbar]"!=sub(Str7,P,1
+				A-inString("123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh",sub(Str9,inString(Str8,sub(Str7,P,1)),1->A
+				P-1->P
+			End
+		Else
+			inString("123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh",sub(Str9,inString(Str8,sub(Str7,P,1)),1
+			A-Ans->A
+			P-1->P
+		End
+		A->V
+	End
+	If K=26
+	Then
+		If A>=|E3fPart(|LCNOTE(Z-1+abs(B/6+1)/2
+		Then
+			If B=~138
+			Then
+				If dim(|LCNOTE)>Z-1+abs(B/6+1)/2
+				Then
+					DelVar AZ+1->Z
+					P+1->P
+					If "[xbar]"!=sub(Str7,P,1
+					inString("123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh",sub(Str9,inString(Str8,sub(Str7,P,1)),1->A
+					1.1:prgmZNOTECE
+				End
+			Else
+				If dim(|LCNOTE)>Z-1+abs(B/6+1)/2
+				Then
+					DelVar AB-12->B
+					P+1->P
+					If "[xbar]"!=sub(Str7,P,1
+					inString("123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh",sub(Str9,inString(Str8,sub(Str7,P,1)),1->A
+				End
+			End
+		Else
+			inString("123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh",sub(Str9,inString(Str8,sub(Str7,P+1,1)),1
+			A+Ans->A
+			P+1->P
+		End
+		A->V
+	End
+	If K=25
+	Then
+		If B=~18
+		Then
+			If Z>1
+			Then
+				Z-1->Z
+				2:prgmZNOTECE
+				1:prgmZNOTECE
+			Else
+				DelVar A1->P
+			End
+		Else
+			B+12->B
+			2:prgmZNOTECE
+		End
+	End
+	If K=34
+	Then
+		If dim(|LCNOTE)>Z-1+abs(B/6+1)/2
+		Then
+			If B=~138
+			Then
+				Z+1->Z
+				2:prgmZNOTECE
+				1.1:prgmZNOTECE
+			Else
+				B-12->B
+				2:prgmZNOTECE
+			End
+		Else
+			iPart(|LCNOTE(Z-1+abs(B/6+1)/2->P
+			|E3fPart(|LCNOTE(Z-1+abs(B/6+1)/2->A
+		End
+	End
+	If T
+	Then
+		Line(0,B+1,262,B+1,0,Blue,1
+		Line(0,B-10,262,B-10,0,Blue,1
+		B->L3(4
+		A->L3(2
+		{L3(3),L3(4
+		If Ans(1)-Ans(2)
+		Then
+			For(I,Ans(1),Ans(2),12-24(Ans(2)<Ans(1
+				If I=L3(3
+				Then
+					Line((Ans(2)<Ans(1))L3(1),I+1,L3(1)(Ans(2)>Ans(1))+(Ans(2)<Ans(1))|E3fPart(|LCNOTE(Z-1+abs(I/6+1)/2)),I+1,Blue,1
+					Line((Ans(2)<Ans(1))L3(1),I-10,L3(1)(Ans(2)>Ans(1))+(Ans(2)<Ans(1))|E3fPart(|LCNOTE(Z-1+abs(I/6+1)/2)),I-10,Blue,1
+				Else
+					If I=L3(4
+					Then
+						Line((Ans(2)>Ans(1))L3(2),I+1,(Ans(2)>Ans(1))L3(2),I+1,Blue,1
+						Line((Ans(2)>Ans(1))L3(2),I-10,(Ans(2)>Ans(1))L3(2),I-10,Blue,1
+					Else
+						Line(0,I+1,|E3fPart(|LCNOTE(Z-1+abs(I/6+1)/2)),I+1,Blue,1
+						Line(0,I-10,|E3fPart(|LCNOTE(Z-1+abs(I/6+1)/2)),I-10,Blue,1
+					End
+				End
+			End
+		End
+		P->L3(6
+		L3(1
+		If B<L3(3
+		0
+		If B>L3(3
+		|E3fPart(|LCNOTE(Z-1+abs(B/6+1)/2
+		Line(Ans,B+1,A,B+1,Blue,1
+		Line(Ans,B-10,A,B-10,Blue,1
+	End
+	pi->K
+End
+If K=pi
+End
+If K>=41
+Then
+	If T and K!=95
+	Goto MK
+	Lbl CH
+	If K!=105
+	Then
+		sub(sub(Str8,34M+1,34),K-20-5int(.1K),1->Str2
+		If Ans!="[|F]
+		Then
+			If S
+			Then
+				Text(150,6,"  Save "
+				DelVar S
+			End
+			|LBNER(4)-1->|LBNER(4
+			inString("123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh",sub(sub(Str9,34M+1,34),K-20-5int(.1K),1->W
+			Lbl SP
+			Z-1+abs(B/6+1)/2->R
+			If P=length(Str7
+			Str7+Str2
+			If P<length(Str7
+			sub(Str7,1,P)+Str2+sub(Str7,P+1,length(Str7)-P
+			Ans->Str7
+			P+1->P
+			|LCNOTE(R)+W/|E3->|LCNOTE(R
+			1+seq(|LCNOTE(X),X,R,dim(|LCNOTE
+			If R>1
+			augment(seq(|LCNOTE(X),X,1,R-1),Ans
+			Ans->|LCNOTE
+			If 262<|E3fPart(|LCNOTE(R
+			Then
+				5.2:prgmZNOTECE
+				Z->F
+				If B>~138
+				Then
+					B-12->B
+				Else
+					Z+1->Z
+				End
+				1.2-.1(Z!=F:prgmZNOTECE
+				2:prgmZNOTECE
+			Else
+				Text(abs(B+3),A+1,Str2
+				A+W->A
+				If P<length(Str7
+				Then
+					iPart(|LCNOTE(R))-P
+					If Ans
+					Text(abs(B+3),A+1,sub(Str7,P+1,Ans
+				End
+			End
+			A->V
+			If K=105
+			Goto K1
+		End
+	Else
+		If S
+		Then
+			Text(150,6,"  Save "
+			DelVar S
+		End
+		|LBNER(4)-1->|LBNER(4
+		If P=length(Str7
+		Then
+			1+dim(|LCNOTE->dim(|LCNOTE
+			DelVar ADelVar UB-12->B
+			Str7+"[xbar]->Str7
+			P+1->P
+			Ans->J
+			Ans->|LCNOTE(Z-1+abs(B/6+1)/2
+			1->L
+			A->V
+			If B<~138
+			Then
+				Z+1->Z
+				B+12->B
+				1.1:prgmZNOTECE
+			End
+		End
+		If P<length(Str7) and not(A) and (sub(Str7,P,1)="[xbar]" or P=1
+		Then
+			Text(abs(B+3),A+1,"                                                                                                                                                                                           "
+			DelVar ADelVar UB-12->B
+			If P=1
+			Then
+				augment({0},|LCNOTE->|LCNOTE
+				1+|LCNOTE->|LCNOTE
+			Else
+				1+dim(|LCNOTE->dim(|LCNOTE
+				For(I,dim(|LCNOTE),Z-1+abs(B/6+1)/2,~1
+					1+|LCNOTE(I-1->|LCNOTE(I
+					0->|LCNOTE(I-1
+				End
+				1+iPart(|LCNOTE(I-1->|LCNOTE(I
+			End
+			sub(Str7,1,P)+"[xbar]"+sub(Str7,P+1,length(Str7)-P->Str7
+			P+1->P
+			Ans->J
+			1->L
+			A->V
+			If B<~138
+			Then
+				Z+1->Z
+				B+12->B
+				1.1
+			Else
+				1.2
+			End
+			prgmZNOTECE
+		End
+		If P<length(Str7) and P>1 and not(A) and sub(Str7,P,1)!="[xbar]"
+		Then
+			For(I,Z-1+abs(B/6+1)/2,dim(|LCNOTE
+				1+|LCNOTE(I->|LCNOTE(I
+			End
+			sub(Str7,1,P)+"[xbar]"+sub(Str7,P+1,length(Str7)-P->Str7
+			P+1->P
+			Ans->J
+			1->L
+			A->V
+		End
+		If A and A<|E3fPart(|LCNOTE(Z-1+abs(B/6+1)/2
+		Then
+			Z-1+abs(B/6+1)/2->R
+			Text(abs(B+3),A+1,"                                                                                                                                                                                           "
+			sub(Str7,1,P)+"[xbar]"+sub(Str7,P+1,length(Str7)-P->Str7
+			|LCNOTE(R)-(P+A/|E3->W
+			P->theta
+			2+iPart(|LCNOTE(R
+			If length(Str7)>=Ans
+			Then
+				If "[xbar]"=sub(Str7,Ans,1
+				Then
+					P+A/|E3->|LCNOTE(R
+					augment(seq(|LCNOTE(X),X,1,R),1+augment({W+iPart(|LCNOTE(R))},seq(|LCNOTE(X),X,R+1,dim(|LCNOTE->|LCNOTE
+				Else
+					P+A/|E3->|LCNOTE(R
+					augment(seq(|LCNOTE(X),X,1,R),1+seq(|LCNOTE(X),X,R+1,dim(|LCNOTE->|LCNOTE
+					R+1
+					fPart(W)+|LCNOTE(Ans->|LCNOTE(Ans
+					Lbl CA
+					R+1->R
+					|E3fPart(|LCNOTE(Ans->I
+					iPart(|LCNOTE(R->X
+					If I>262
+					Then
+						Text(0,73,"                                                            "
+						TextColor(Red
+						Text(0,88,"Processing...   
+						If inString(sub(Str7,1+iPart(|LCNOTE(R-1)),X-1-iPart(|LCNOTE(R-1)))," "
+						Then
+							Repeat I<=262 and " "=sub(Str7,X,1
+								I-inString("123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh",sub(Str9,inString(Str8,sub(Str7,X,1)),1->I
+								X-1->X
+							End
+						Else
+							Repeat I<=262
+								I-inString("123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh",sub(Str9,inString(Str8,sub(Str7,X,1)),1->I
+								X-1->X
+							End
+						End
+						X->P
+						I->A
+						|LCNOTE(R)-(P+A/|E3->W
+						1+iPart(|LCNOTE(R
+						If length(Str7)>=Ans
+						Then
+							If "[xbar]"=sub(Str7,Ans,1
+							Then
+								P+A/|E3->|LCNOTE(R
+								augment(seq(|LCNOTE(X),X,1,R),augment({W+iPart(|LCNOTE(R))},seq(|LCNOTE(X),X,R+1,dim(|LCNOTE->|LCNOTE
+							Else
+								P+A/|E3->|LCNOTE(R
+								R+1
+								fPart(W)+|LCNOTE(Ans->|LCNOTE(Ans
+							End
+						Else
+							P+A/|E3->|LCNOTE(R
+							1+dim(|LCNOTE->dim(|LCNOTE
+							W+iPart(|LCNOTE(R->|LCNOTE(Ans
+						End
+					End
+					0->A
+					If dim(|LCNOTE)>=R+1
+					Then
+						If |E3fPart(|LCNOTE(R+1))>262
+						1->A
+					End
+					If A
+					Goto CA
+					TextColor(Navy
+					Text(0,73,"BasicNote Editor
+					TextColor(Black
+				End
+			Else
+				P+A/|E3->|LCNOTE(Z-1+abs(B/6+1)/2
+				1+dim(|LCNOTE->dim(|LCNOTE
+				1+W+iPart(|LCNOTE(Z-1+abs(B/6+1)/2->|LCNOTE(Ans
+			End
+			DelVar ADelVar UB-12->B
+			theta+1->P
+			Ans->J
+			1->L
+			A->V
+			If B<~138
+			Then
+				Z+1->Z
+				~138->B
+				1.1
+			Else
+				1.2
+			End
+			prgmZNOTECE
+		End
+		If P<length(Str7) and A and A>=|E3fPart(|LCNOTE(Z-1+abs(B/6+1)/2
+		Then
+			If "[xbar]"!=sub(Str7,P+1,1
+			Then
+				DelVar ADelVar UB-12->B
+				For(I,Z-1+abs(B/6+1)/2,dim(|LCNOTE
+					1+|LCNOTE(I->|LCNOTE(I
+				End
+				sub(Str7,1,P)+"[xbar]"+sub(Str7,P+1,length(Str7)-P->Str7
+				P+1->P
+				Ans->J
+				1->L
+				A->V
+				If B<~138
+				Then
+					Z+1->Z
+					B+12->B
+					1.1:prgmZNOTECE
+				End
+			Else
+				DelVar ADelVar UB-12->B
+				1+dim(|LCNOTE->dim(|LCNOTE
+				For(I,dim(|LCNOTE),Z+abs(B/6+1)/2,~1
+					1+|LCNOTE(I-1->|LCNOTE(I
+					0->|LCNOTE(I-1
+				End
+				1+iPart(|LCNOTE(I-1->|LCNOTE(I
+				sub(Str7,1,P)+"[xbar]"+sub(Str7,P+1,length(Str7)-P->Str7
+				P+1->P
+				Ans->J
+				1->L
+				A->V
+				If B<~138
+				Then
+					Z+1->Z
+					B+12->B
+					1.1
+				Else
+					1.2
+				End
+				prgmZNOTECE
+			End
+		End
+	End
+	pi->K
+End
+If K=pi
+End
+If (P>1 or T) and K=23
+Then
+	If S
+	Then
+		Text(150,6,"  Save "
+		DelVar S
+	End
+	|LBNER(4)-1->|LBNER(4
+	If T
+	Then
+		Goto MK
+		Lbl DE
+		{L3(5),L3(6
+		If Ans(1)-Ans(2
+		Then
+			If Ans(1)>Ans(2
+			{L3(6),L3(5
+			If Ans(2)<length(Str7
+			Then
+				sub(Str7,1,Ans(1))+sub(Str7,Ans(2)+1,length(Str7)-Ans(2->Str7
+			Else
+				sub(Str7,1,Ans(1->Str7
+			End
+			L3(3
+			If Ans<L3(4
+			L3(4
+			Ans->B
+			5+.1(Z-1+abs(Ans/6+1)/2>1:prgmZNOTECE
+			1.2:prgmZNOTECE
+			If L3(5)>L3(6
+			Then
+				L3(2->A
+				L3(4->B
+				L3(6->P
+			Else
+				L3(1->A
+				L3(3->B
+				L3(5->P
+			End
+		End
+	Else
+		Z-1+abs(B/6+1)/2->R
+		max(0,~1+seq(|LCNOTE(X),X,R,dim(|LCNOTE
+		If R-1
+		augment(seq(|LCNOTE(X),X,1,R-1),Ans
+		Ans->|LCNOTE
+		0->F
+		If A
+		Then
+			inString("123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh",sub(Str9,inString(Str8,sub(Str7,P,1)),1->W
+			Text(abs(B+3),A-Ans+1,"                                                                                                                                                                                           "
+			A-Ans->A
+			|LCNOTE(R)-W/|E3->|LCNOTE(R
+			iPart(Ans)-P-1
+			If Ans>0
+			Text(abs(B+3),A+1,sub(Str7,P+1,Ans
+			iPart(|LCNOTE(R
+			If length(Str7)-1>Ans
+			Then
+				If "[xbar]"!=sub(Str7,2+Ans,1
+				Then
+					inString(Str7," ",2+Ans
+					If Ans and Ans<=iPart(|LCNOTE(R+1
+					Then
+						DelVar W
+						For(I,1,length(sub(Str7,1+iPart(|LCNOTE(R)),Ans-1-iPart(|LCNOTE(R
+							W+inString("123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh",sub(Str9,inString(Str8,sub(Str7,I+P,1)),1->W
+						End
+						If 262>=W+|E3fPart(|LCNOTE(R
+						Then
+							|LCNOTE(Z-1+abs(B/6+1)/2)-2+(I+W/|E3->|LCNOTE(Z-1+abs(B/6+1)/2
+							1.2->F
+						End
+					End
+				End
+			End
+		Else
+			B+12->B
+			If "[xbar]"=sub(Str7,P,1
+			Then
+				|E3fPart(|LCNOTE(R-1->A
+				If fPart(|LCNOTE(R
+				Then
+					fPart(|LCNOTE(R-1))+|LCNOTE(R->|LCNOTE(R-1
+					If R=dim(|LCNOTE
+					Then
+						R-1->dim(|LCNOTE
+					Else
+						augment(seq(|LCNOTE(X),X,1,R-1),seq(|LCNOTE(X),X,R+1,dim(|LCNOTE->|LCNOTE
+					End
+					|E3fPart(|LCNOTE(R-1->I
+					R-1->R
+					iPart(|LCNOTE(Ans->X
+					While I>262
+						2
+						If R>1
+						1+iPart(|LCNOTE(R-1
+						"I<=262->|v
+						If inString(sub(Str7,Ans,X-Ans)," "
+						"I<=262 and sub(Str7,X,1)=sub(Str8,66,1->|v
+						Repeat |v or sub(Str7,X,1)="[xbar]
+							I-inString("123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh",sub(Str9,inString(Str8,sub(Str7,X,1)),1->I
+							X-1->X
+						End
+						|LCNOTE(R->theta
+						X+I/|E3->|LCNOTE(R
+						augment(seq(|LCNOTE(X),X,1,R),{iPart(Ans)+(theta-(X+I/|E3
+						If R+1<dim(|LCNOTE
+						augment(Ans,seq(|LCNOTE(X),X,R+1,dim(|LCNOTE
+						Ans->|LCNOTE
+						R+1->R
+						|E3fPart(|LCNOTE(Ans->I
+					End
+					1.2->F
+				Else
+					seq(|LCNOTE(X),X,1,Z-1+abs(B/6+1)/2
+					If dim(|LCNOTE)>Z+abs(B/6+1)/2
+					Then
+						augment(Ans,seq(|LCNOTE(X),X,Z+1+abs(B/6+1)/2,dim(|LCNOTE->|LCNOTE
+						1.2->F
+					Else
+						Ans->|LCNOTE
+					End
+				End
+			Else
+				R-1->R
+				|E3fPart(|LCNOTE(Ans->A
+				Ans-inString("123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh",sub(Str9,inString(Str8,sub(Str7,P,1)),1->A
+				|LCNOTE(R)-1+Ans/|E3->|LCNOTE(R
+				iPart(Ans->X
+				fPart(|LCNOTE(R))+|LCNOTE(R+1->|LCNOTE(R
+				|E3fPart(|LCNOTE(R->I
+				If fPart(|LCNOTE(R+1
+				Then
+					While I>262
+						2
+						If R>1
+						1+iPart(|LCNOTE(R-1
+						"I<=262->|v
+						If inString(sub(Str7,Ans,X-Ans)," "
+						"I<=262 and sub(Str7,X,1)=sub(Str8,66,1->|v
+						Repeat |v or sub(Str7,X,1)="[xbar]
+							I-inString("123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh",sub(Str9,inString(Str8,sub(Str7,X,1)),1->I
+							X-1->X
+						End
+						|LCNOTE(R->theta
+						X+I/|E3->|LCNOTE(R
+						augment(seq(|LCNOTE(X),X,1,R),{iPart(Ans)+(theta-(X+I/|E3
+						If R+1<dim(|LCNOTE
+						augment(Ans,seq(|LCNOTE(X),X,R+1,dim(|LCNOTE
+						Ans->|LCNOTE
+						R+1->R
+						|E3fPart(|LCNOTE(Ans->I
+					End
+				Else
+					If R+1=dim(|LCNOTE
+					Then
+						dim(|LCNOTE)-1->dim(|LCNOTE
+					Else
+						augment(seq(|LCNOTE(X),X,1,R),seq(|LCNOTE(X),X,R+2,dim(|LCNOTE->|LCNOTE
+					End
+				End
+				1.2->F
+			End
+			If B>~18 or B=~126 and Z+10>dim(|LCNOTE
+			Then
+				Z-1->Z
+				If B>~18
+				Then
+					~18->B
+				Else
+					~138->B
+				End
+				1->F
+			End
+		End
+		If P=length(Str7
+		sub(Str7,1,P-1->Str7
+		If P<length(Str7
+		Then
+			sub(Str7,1,P-1)+sub(Str7,P+1,length(Str7)-P->Str7
+			iPart(|LCNOTE(Z-1+abs(B/6+1)/2))-P+1
+			If Ans and not(F
+			Text(abs(B+3),A+1,sub(Str7,P,Ans
+		End
+		P-1->P
+		A->V
+		If F
+		Then
+			F:prgmZNOTECE
+			DelVar F
+		End
+	End
+End
+End
+If Str7=" " and not(Q
+Then
+	4:prgmZNOTECE
+Else
+	If Str7!=" " and not(S
+	Then
+		TextColor(Red
+		Text(150,6,"Save?   
+		TextColor(Blue
+		Text(150,60,"<Yes>
+		1->I
+		Repeat K=21 or K=105
+			getKey->K
+			If Ans=24 or Ans=26
+			Then
+				not(I->I
+				If I
+				Text(150,60,"<Yes>
+				If not(I
+				Text(150,60,"<No>   
+			End
+		End
+		TextColor(Black
+		3
+		If I
+		prgmZNOTECE
+	End
+End
+DelVar |LCNOTE
+ClrDraw
