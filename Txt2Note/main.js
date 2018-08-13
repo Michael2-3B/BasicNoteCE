@@ -1,6 +1,7 @@
 document.getElementById('textInput').addEventListener('change', getText);
 
 function doStuffWithText(text) {
+  document.getElementById("theString").innerText = text;
   download(convertTxt(), "Txt2Note", 1)
 }
 
