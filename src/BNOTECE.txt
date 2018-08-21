@@ -1,5 +1,7 @@
-ClrHome
-SetUpEditor BNER
+DelVar KClrHome
+"[|F][|F][|F][|F][|F]BPUW875668T888AK8888[|F]8888[|F]846888[|F][|F]888888888A98888889AA9A884[|F]248A88[|F][|F]888884896C8989878A8C98884[|F]248[|F][|F][|F][|F][|F][|F]afhCH8889QA8C6NGGG64GGG[|F][|F][|F]9N4CCAAA888AA84->Str9
+"[|F][|F][|F][|F][|F]^^-1sin(cos(tan(^^^2,()/log(789*ln(456-[|F]123+[|F]0.~ABC[|F][|F]DEFGHIJKLMNOPQRSTUVWXYZtheta'[|F] :?abc[|F][|F]defghijklmnopqrstuvwxyztheta'[|F] :?[|F][|F][|F][|F][|F][|F]sin^-1(cos^-1(tan^-1(pisqrt(|E{}[e]10^(|u|v|w[e^(L4L5L6][|F]L1L2L3[|F][|F][|F][i]Ans!@#$%&=><>=<=_|"->Str8
+SetUpEditor BNER,BNOTE,BMEM,BNS0,BNS1,BNS2,BNS3,BNS4,BNS5,BNS6,BNS7,BNS8
 If dim(|LBNER
 Then
 	If |LBNER(1)=ln(23pi
@@ -13,7 +15,19 @@ Then
 		pi->K
 		ClrHome
 	End
-	If |LBNER(1)=ln(48pi
+	If |LBNER(1)=ln(48pi) and dim(|LBNS0) and dim(|LBNOTE) and not(|LBNER(5
+	Then
+		Output(1,1,"Looks like your note file may be corrupted.
+		Output(3,1,"Attempt decompression of  last save?
+		Output(10,1,"Decompress
+		Output(10,23,"Skip
+		Repeat sum(Ans={11,15
+			getKey
+		End
+		If Ans=11
+		48pi->K
+	End
+	If |LBNER(1)=ln(48pi) and |LBNER(5
 	Then
 		Output(1,1,"It looks like you might   have a recurring error.   This is likely due to a   missing or tampered with  save file.
 		Output(7,1,"Would you like to reset   all note data or continue?
@@ -23,17 +37,22 @@ Then
 			getKey
 		End
 		If Ans=11
-		DelVar |LBMEMDelVar |LBNOTEDelVar |LBNS0DelVar |LBNS1DelVar |LBNS2DelVar |LBNS3DelVar |LBNS4DelVar |LBNS5DelVar |LBNS6DelVar |LBNS7DelVar |LBNS8
+		Then
+			23pi->K
+			DelVar |LBMEMDelVar |LBNOTEDelVar |LBNS0DelVar |LBNS1DelVar |LBNS2DelVar |LBNS3DelVar |LBNS4DelVar |LBNS5DelVar |LBNS6DelVar |LBNS7DelVar |LBNS8
+		End
 		ClrHome
 	End
 	If K!=pi
 	ln(48pi->|LBNER(1
 Else
-	{ln(48pi),0,20->|LBNER
+	{ln(48pi),0,20,20,1->|LBNER
 End
-SetUpEditor BNOTE,BNS0,BNS1,BNS2,BNS3,BNS4,BNS5,BNS6,BNS7,BNS8
-If dim(|LBNS0) and dim(|LBNOTE) and |LBNER(1)=ln(48pi
+If K=23pi
+Goto ST
+If dim(|LBNS0) and dim(|LBNOTE) and |LBNER(1)=ln(48pi) and (|LBNER(5) or K=48pi
 Then
+	1->|LBNER(5
 	ClrHome
 	Output(1,1,"Decompressing...
 	Str8+"[xbar][ybar]->Str8
@@ -74,7 +93,23 @@ Then
 	sub(Str8,1,length(Str8)-2->Str8
 	sub(Str6,2,length(Str6)-1->Str6
 	ClrHome
+	1->I
+	~1->A
+	Repeat I>length(Str6
+		1+inString(Str6,"[ybar]",I->I
+		A+1->A
+	End
+	A->|LBNOTE(1
+	1->I
+	While A
+		Repeat |LBNOTE(I)=~1
+			I+1->I
+		End
+		A-1->A
+	End
+	I->dim(|LBNOTE
 End
+Lbl ST
 StoreGDB 0
 BackgroundOff
 CoordOff
@@ -152,68 +187,42 @@ Repeat sum(K={1,15,45
 		Float
 		TextColor(Navy
 		Text(0,70,"BasicNote Options
-		TextColor(Red
-		Text(15,1,">
 		|LBNER(2
 		Line(11,~23,13,~25,Ans
 		Line(13,~25,19,~19,Ans
-		If Ans
-		Then
-			TextColor(Black
-			Text(27,24,"Save every
-			Text(27,136,"edits.
-			TextColor(Red
-			Text(27,102,"<"+toString(|LBNER(3))+">
-		End
 		Line(10,~18,10,~28,Black,1
 		Line(10,~18,20,~18,Black,1
 		Line(10,~28,20,~28,Black,1
 		Line(20,~18,20,~28,Black,1
+		|LBNER(5
+		Line(11,~35,13,~37,Ans
+		Line(13,~37,19,~31,Ans
+		Line(10,~30,10,~40,Black,1
+		Line(10,~30,20,~30,Black,1
+		Line(10,~40,20,~40,Black,1
+		Line(20,~30,20,~40,Black,1
 		TextColor(Black
 		Text(15,24,"Auto-Saving
+		Text(27,24,"Compression
+		15->I
 		Repeat sum(K={45,11,12,13,14,15
+			TextColor(Red
+			Text(I,1,">
 			Repeat Ans
 				getKey
 			End
 			Ans->K
-			If Ans=21 or Ans=105
+			If sum(Ans={25,34
 			Then
-				not(|LBNER(2->|LBNER(2
-				Line(11,~23,13,~25,Ans
-				Line(13,~25,19,~19,Ans
-				If Ans
-				Then
-					TextColor(Black
-					Text(27,24,"Save every
-					Text(27,136,"edits.
-					TextColor(Red
-					Text(27,102,"<"+toString(|LBNER(3))+">
-				Else
-					Text(27,1,Str3
-					Line(10,~18,10,~28,Black,1
-					Line(10,~28,20,~28,Black,1
-					Line(20,~18,20,~28,Black,1
-				End
+				Text(I,1,"    "
+				15+12(K=34->I
 			End
-			If K=34 and |LBNER(2
+			If sum(K={21,105
 			Then
-				Text(15,1,"   
-				TextColor(Red
-				Text(27,1,">
-				Repeat sum(K={21,105,45,25,11,12,13,14,15
-					Text(27,102,"<"+toString(|LBNER(3))+">
-					Repeat Ans
-						getKey
-					End
-					Ans->K
-					If Ans=24 and |LBNER(3)>10
-					|LBNER(3)-10->|LBNER(3
-					If K=26 and |LBNER(3)<90
-					|LBNER(3)+10->|LBNER(3
-				End
-				Text(27,1,"   
-				Text(15,1,">
-				TextColor(Black
+				2+3(I=27
+				not(|LBNER(Ans->|LBNER(Ans
+				Line(11,~8-I,13,~10-I,Ans
+				Line(13,~10-I,19,~4-I,Ans
 			End
 		End
 		Fix 3
@@ -246,8 +255,8 @@ Repeat sum(K={1,15,45
 		Text(27,1,"by
 		Text(39,1,"Released
 		TextColor(Red
-		Text(15,148,"1.0.0
-		Text(39,66,"07/26/2018
+		Text(15,148,"1.1.2
+		Text(39,66,"08/15/2018
 		TextColor(Blue
 		Text(63,1,"Text Selection: [2nd] + [+]
 		Text(75,1,"Copy Text: [sto-\>]
@@ -445,60 +454,65 @@ If K=1
 Goto A
 ClrDraw
 ClrHome
-Output(1,1,"Compressing...
-DelVar |LBNS0DelVar |LBNS1DelVar |LBNS2DelVar |LBNS3DelVar |LBNS4DelVar |LBNS5DelVar |LBNS6DelVar |LBNS7DelVar |LBNS8
-Fix 3
-Str8+"[xbar][ybar]->Str8
-For(I,0,length(Str6)/4
-	1+int(I/999->X
-	1+remainder(I,999->Y
-	0
-	If 4I+1<=length(Str6
-	inString(Str8,sub(Str6,4I+1,1
-	If 4I+2<=length(Str6
-	Ans+inString(Str8,sub(Str6,4I+2,1))/|E3
-	If 4I+3<=length(Str6
-	Ans+inString(Str8,sub(Str6,4I+3,1))[i]
-	If 4I+4<=length(Str6
-	Ans+(inString(Str8,sub(Str6,4I+4,1))/|E3)[i]
-	If X=1
-	Ans->|LBNS0(Y
-	If X=2
-	Ans->|LBNS1(Y
-	If X=3
-	Ans->|LBNS2(Y
-	If X=4
-	Ans->|LBNS3(Y
-	If X=5
-	Ans->|LBNS4(Y
-	If X=6
-	Ans->|LBNS5(Y
-	If X=7
-	Ans->|LBNS6(Y
-	If X=8
-	Ans->|LBNS7(Y
-	If X=9
-	Ans->|LBNS8(Y
+If |LBNER(5
+Then
+	Output(1,1,"Compressing...
+	DelVar |LBNS0DelVar |LBNS1DelVar |LBNS2DelVar |LBNS3DelVar |LBNS4DelVar |LBNS5DelVar |LBNS6DelVar |LBNS7DelVar |LBNS8
+	Fix 3
+	Str8+"[xbar][ybar]->Str8
+	For(I,0,length(Str6)/4
+		1+int(I/999->X
+		1+remainder(I,999->Y
+		0
+		If 4I+1<=length(Str6
+		inString(Str8,sub(Str6,4I+1,1
+		If 4I+2<=length(Str6
+		Ans+inString(Str8,sub(Str6,4I+2,1))/|E3
+		If 4I+3<=length(Str6
+		Ans+inString(Str8,sub(Str6,4I+3,1))[i]
+		If 4I+4<=length(Str6
+		Ans+(inString(Str8,sub(Str6,4I+4,1))/|E3)[i]
+		If X=1
+		Ans->|LBNS0(Y
+		If X=2
+		Ans->|LBNS1(Y
+		If X=3
+		Ans->|LBNS2(Y
+		If X=4
+		Ans->|LBNS3(Y
+		If X=5
+		Ans->|LBNS4(Y
+		If X=6
+		Ans->|LBNS5(Y
+		If X=7
+		Ans->|LBNS6(Y
+		If X=8
+		Ans->|LBNS7(Y
+		If X=9
+		Ans->|LBNS8(Y
+	End
+	Archive |LBNS0
+	If X>1
+	Archive |LBNS1
+	If X>2
+	Archive |LBNS2
+	If X>3
+	Archive |LBNS3
+	If X>4
+	Archive |LBNS4
+	If X>5
+	Archive |LBNS5
+	If X>6
+	Archive |LBNS6
+	If X>7
+	Archive |LBNS7
+	If X>8
+	Archive |LBNS8
+	sub(Str8,1,length(Str8)-2->Str8
+	DelVar Str6
 End
-Archive |LBNS0
-If X>1
-Archive |LBNS1
-If X>2
-Archive |LBNS2
-If X>3
-Archive |LBNS3
-If X>4
-Archive |LBNS4
-If X>5
-Archive |LBNS5
-If X>6
-Archive |LBNS6
-If X>7
-Archive |LBNS7
-If X>8
-Archive |LBNS8
-sub(Str8,1,length(Str8)-2->Str8
-DelVar Str60->|LBNER(1
+0->|LBNER(1
+DelVar |LBMEM
 Float
 RecallGDB 0
 Archive |LBNOTE

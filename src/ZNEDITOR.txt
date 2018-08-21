@@ -1,5 +1,3 @@
-"[|F][|F][|F][|F][|F]BPUW875668T888AK8888[|F]8888[|F]846888[|F][|F]888888888A98888889AA9A884[|F]248A88[|F][|F]888884896C8989878A8C98884[|F]248[|F][|F][|F][|F][|F][|F]afhCH8889QA8C6NGGG64GGG[|F][|F][|F]9N4CCAAA888AA84->Str9
-"[|F][|F][|F][|F][|F]^^-1sin(cos(tan(^^^2,()/log(789*ln(456-[|F]123+[|F]0.~ABC[|F][|F]DEFGHIJKLMNOPQRSTUVWXYZtheta'[|F] :?abc[|F][|F]defghijklmnopqrstuvwxyztheta'[|F] :?[|F][|F][|F][|F][|F][|F]sin^-1(cos^-1(tan^-1(pisqrt(|E{}[e]10^(|u|v|w[e^(L4L5L6][|F]L1L2L3[|F][|F][|F][i]Ans!@#$%&=><>=<=_|"->Str8
 Horizontal ~15,Black,1
 TextColor(Navy
 Text(0,73,"BasicNote Editor
@@ -9,11 +7,12 @@ Text(0,254,"A
 Text(150,6,"Saved
 Text(150,64,"Pg Up
 Text(150,110,"Pg Dwn
+Text(150,168,"Func
 Text(150,225,"Exit
 For(I,52.8,211.2,52.8
 	Line(I,~164,I,~150,Black,1
 End
-1->M:~18->B:1->Z:1->S:0->T:0->F
+1->M:~18->B:1->Z:1->S:0->T:0->F:0->theta
 DelVar ADelVar JDelVar UDelVar V
 {0,0,0,0,0,0->L3
 |LBNER(3->|LBNER(4
@@ -37,7 +36,6 @@ Repeat K=15
 	If pxl-Test(5,3
 	Text(0,2,"                        "
 	
-	
 	If K=11
 	Then
 		If not(S
@@ -48,6 +46,318 @@ Repeat K=15
 		pi->K
 	End
 	If K=pi
+End
+
+If K=14
+Then
+	StorePic 5
+	For(I,~149,~136,2
+		Line(159,I,210,I,0
+	End
+	Text(136,161,"Rplace
+	Line(158,~150,158,~136,BLACK,1
+	Line(211,~150,211,~136,BLACK,1
+	~136->I
+	Line(158,I,211,I,RED,1
+	Line(158,I-14,211,I-14,RED,1
+	Line(158,I,158,I-14,RED,1
+	Line(211,I,211,I-14,RED,1
+	Repeat sum(Ans={21,105,14
+		getKey->K
+	End
+	If K=14
+	Then
+		ClrDraw
+		RecallPic 5
+	End
+	If sum(K={21,105
+	Then
+		Line(32,~52,232,~52
+		Line(32,~112,232,~112
+		Line(32,~112,32,~52
+		Line(232,~112,232,~52
+		For(I,~54,~110,~2
+			Line(34,I,231,I,MedGray
+		End
+		Text(63,50,"FIND:
+		Text(87,50,"REPLACE:
+		For(I,~64,~76,~2
+			Line(91,I,222,I,0
+			Line(114,I-24,222,I-24,0
+		End
+		Text(105,140,"CANCEL
+		Text(105,200,"OK
+		Line(138,~104,189,~104,BLACK
+		Line(138,~104,138,~120,BLACK
+		Line(138,~120,189,~120,BLACK
+		Line(189,~120,189,~104,BLACK
+
+		Line(198,~104,198,~120,BLACK
+		Line(198,~104,216,~104,BLACK
+		Line(198,~120,216,~120,BLACK
+		Line(216,~120,216,~104,BLACK
+		92->I
+		~66->X
+		" ->Str1
+		" ->Str2
+		{2,92->L1
+		{2,115->L2
+		Repeat X=~114 and sum(K={21,105
+			If X>~114
+			Line(I,X,I,X-9,Red,1
+			Repeat Ans
+				getKey
+			End
+			If X>~114
+			Line(I,X,I,X-9,0,Red,1
+			Ans->K
+			If Ans>=41 and Ans<=105 and X>~114
+			Then
+				If K=105
+				Then
+					"[xbar]->Str4
+					9->W
+				Else
+					sub(sub(Str8,34M+1,34),K-20-5int(.1K),1->Str4
+					inString("123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh",sub(sub(Str9,34M+1,34),K-20-5int(.1K),1->W
+				End
+				If Str4!="[|F]
+				Then
+					Lbl IW
+					If theta=9
+					J->X
+					I+W->I
+					If Ans>221
+					Then
+						If X=~66
+						Then
+							Repeat I<=221
+								If sub(Str1,L1(1),1)="[xbar]
+								Then
+									I-9->I
+								Else
+									I-inString("123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh",sub(Str9,inString(Str8,sub(Str1,L1(1),1)),1->I
+								End
+								L1(1)+1->L1(1
+							End
+							I->L1(2
+							For(H,~64,~76,~2
+								Line(91,H,222,H,0
+							End
+							Text(abs(X+3),93,sub(Str1,L1(1),length(Str1)-L1(1)+1
+						End
+						If X=~90
+						Then
+							Repeat I<=221
+								If sub(Str2,L2(1),1)="[xbar]
+								Then
+									I-9->I
+								Else
+									I-inString("123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh",sub(Str9,inString(Str8,sub(Str2,L2(1),1)),1->I
+								End
+								L2(1)+1->L2(1
+							End
+							I->L2(2
+							For(H,~64,~76,~2
+								Line(114,H-24,222,H-24,0
+							End
+							Text(abs(X+3),115,sub(Str2,L2(1),length(Str2)-L2(1)+1
+						End
+					End
+					Text(abs(X+3),I+1-W,Str4
+					If X=~66
+					Then
+						L1(2)+W->L1(2
+						Str1+Str4->Str1
+					Else
+						L2(2)+W->L2(2
+						Str2+Str4->Str2
+					End
+					If theta=9
+					Goto K1
+				End
+			End
+			If K=21 or K=31
+			Then
+				If K=31 and M=3
+				0->M
+				If K=31
+				M+1-3(M=2->M
+				If K=21
+				3(M!=3->M
+				Text(0,254,sub(" Aa2",M+1,1
+				If not(M
+				Text(0,254,"    
+				pi->K
+			End
+			If K=23
+			Then
+				If X=~66 and length(Str1)>1
+				Then
+					If "[xbar]"=sub(Str1,length(Str1),1
+					Then
+						I-9->I
+					Else
+						I-inString("123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh",sub(Str9,inString(Str8,sub(Str1,length(Str1),1)),1->I
+					End
+					9
+					If "[xbar]"!=sub(Str1,L1(1),1
+					inString("123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh",sub(Str9,inString(Str8,sub(Str1,L1(1),1)),1
+					If I+Ans<=221 and L1(1)>2
+					Then
+						I+Ans->I
+						L1(1)-1->L1(1
+					End
+					I->L1(2
+					sub(Str1,1,length(Str1)-1->Str1
+					For(H,~64,~76,~2
+						Line(I,H,222,H,0
+					End
+					If length(Str1)>1
+					Text(abs(X+3),93,sub(Str1,L1(1),length(Str1)-L1(1)+1
+				End
+				If X=~90 and length(Str2)>1
+				Then
+					If "[xbar]"=sub(Str2,length(Str2),1
+					Then
+						I-9->I
+					Else
+						I-inString("123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh",sub(Str9,inString(Str8,sub(Str2,length(Str2),1)),1->I
+					End
+					9
+					If "[xbar]"!=sub(Str2,L2(1),1
+					inString("123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh",sub(Str9,inString(Str8,sub(Str2,L2(1),1)),1
+					If I+Ans<=221 and L2(1)>2
+					Then
+						I+Ans->I
+						L2(1)-1->L2(1
+					End
+					I->L2(2
+					sub(Str2,1,length(Str2)-1->Str2
+					For(H,~64,~76,~2
+						Line(I,H-24,222,H-24,0
+					End
+					If length(Str2)>1
+					Text(abs(X+3),116,sub(Str2,L2(1),length(Str2)-L2(1)+1
+				End
+			End
+			If M=3 and K=102
+			Then
+				9->theta
+				X->J
+				Goto TE
+				Lbl TW
+				J->X
+				0->theta
+				If X=~66
+				L1(2)-W(L1(1)>2->L1(2
+				If X=~90
+				L2(2)-W(L2(1)>2->L2(2
+				Ans->I
+			End
+			If K=25 and X=~114
+			Then
+				Line(138,~104,189,~104,BLACK
+				Line(138,~104,138,~120,BLACK
+				Line(138,~120,189,~120,BLACK
+				Line(189,~120,189,~104,BLACK
+
+				Line(198,~104,198,~120,BLACK
+				Line(198,~104,216,~104,BLACK
+				Line(198,~120,216,~120,BLACK
+				Line(216,~120,216,~104,BLACK
+			End
+			If K=25 or K=34
+			Then
+				X-24(K=34)(X>~114)+24(K=25)(X<~66->X
+				If X=~66
+				L1(2->I
+				If X=~90
+				L2(2->I
+			End
+			If X=~114
+			Then
+				If K=24
+				1->I
+				If K=26 or K=34
+				2->I
+				If I=2
+				Then
+					Line(138,~104,189,~104,BLACK
+					Line(138,~104,138,~120,BLACK
+					Line(138,~120,189,~120,BLACK
+					Line(189,~120,189,~104,BLACK
+					RED
+					If length(Str1)>1 and length(Str2)>1
+					GREEN
+					Line(198,~104,198,~120,Ans
+					Line(198,~104,216,~104,Ans
+					Line(198,~120,216,~120,Ans
+					Line(216,~120,216,~104,Ans
+				End
+				If I=1
+				Then
+					Line(198,~104,198,~120,BLACK
+					Line(198,~104,216,~104,BLACK
+					Line(198,~120,216,~120,BLACK
+					Line(216,~120,216,~104,BLACK
+					Line(138,~104,189,~104,RED
+					Line(138,~104,138,~120,RED
+					Line(138,~120,189,~120,RED
+					Line(189,~120,189,~104,RED
+				End
+			End
+		End
+		ClrDraw
+		RecallPic 5
+		If I=2 and length(Str1)>1 and length(Str2)>1
+		Then
+			sub(Str1,2,length(Str1)-1->Str1
+			sub(Str2,2,length(Str2)-1->Str2
+			sub(Str7,2,length(Str7)-1->Str7
+			If inString(Str7,Str1
+			Then
+				Text(0,73,"                                                            "
+				TextColor(Red
+				Text(0,88,"Processing...
+				TextColor(Black
+				//find and replace
+				length(Str1->J
+				1->I
+				While inString(Str7,Str1,I
+   				inString(Str7,Str1,I->I
+   				Str2
+   				If ln(I
+   				sub(Str7,1,I-1)+Ans
+   				If I+J<=length(Str7
+  				Ans+sub(Str7,I+J,1-I-J+length(Str7
+					Ans->Str7
+					I+length(Str2->I
+				End
+				" "+Str7->Str7
+				5:prgmZNOTECE
+				1:prgmZNOTECE
+				If S
+				Then
+					Text(150,6,"  Save "
+					DelVar S
+				End
+				TextColor(Navy
+				Text(0,73,"BasicNote Editor
+				TextColor(Black
+				0->A
+				~18->B
+				1->P
+				If Z>1
+				iPart(|LCNOTE(Z-1->P
+			Else
+				" "+Str7->Str7
+			End
+		End
+	End
+	pi->K
+End
+If K=pi
 End
 
 If M=3 and K=95
@@ -126,7 +436,22 @@ Then
 			End
 		End
 		5+.1(Z-1+abs(B/6+1)/2>1:prgmZNOTECE
-		1.2:prgmZNOTECE
+		DelVar F
+		If A>|E3fPart(|LCNOTE(Z-1+abs(B/6+1)/2
+		Then
+			iPart(|LCNOTE(Z-1+abs(B/6+1)/2->P
+			1.2:prgmZNOTECE
+			DelVar AB-12->B
+			If B<~138
+			Then
+				Z+1->Z
+				B+12->B
+				1.1:prgmZNOTECE
+				1->F
+			End
+		Else
+			1.2:prgmZNOTECE
+		End
 		TextColor(Navy
 		Text(0,73,"BasicNote Editor
 		TextColor(Black
@@ -142,6 +467,7 @@ If K=pi
 End
 If not(T) and M=3 and K=102
 Then
+	Lbl TE
 	Text(150,59,"! @ # $ % & = > < >= <= _ |       
 	58->Y
 	136->X
@@ -187,12 +513,20 @@ Then
 		End
 		If K=105
 		Then
+			If theta!=9
 			|LBNER(4)-1->|LBNER(4
 			sub(Str8,X+1,1->Str2
+			If theta=9
+			Ans->Str4
 			inString("123456789ABC",sub(Str9,X+1,1->W
+			X->L
+			If theta!=9
 			Goto SP
+			If theta=9
+			Goto IW
 			Lbl K1
-			If S
+			L->X
+			If S and theta!=9
 			Then
 				Text(150,6,"  Save "
 				DelVar S
@@ -203,9 +537,12 @@ Then
 	Text(150,58,"                                                                             "
 	Text(150,64,"Pg Up
 	Text(150,110,"Pg Dwn
+	Text(150,168,"Func
 	For(I,52.8,211.2,52.8
 		Line(I,~164,I,~150,Black,1
 	End
+	If theta=9
+	Goto TW
 	pi->K
 End
 If K=pi
